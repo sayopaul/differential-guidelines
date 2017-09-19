@@ -13,6 +13,13 @@ GENERAL
 ----------
 Tables, records should not be done via PHPMyAdmin , mysql via terminal or any other mysql client . Any changes to the database should be done via a migration to ensure that everyone is using the same database 
   use snake case example : ( user_credentials ) .
+  
+  1. table names
+----------
+When naming your tables , The following format is to be used :
+
+ Single words should be all lower cased . Example : ( users ) and multiple words should be snake cased . Example : ( user_credentials )
+
 
 2. migrations
 ----------
