@@ -21,7 +21,7 @@ When naming your migrations , The following format is to be used
 create_{tablename}_table.php  ( tablenames must be plural) e.g : (create_users_table) 
 
 For example , say I want to make a migration to create the users table , i would name it like this :
-```
+```php
 $ php artisan make:migration create_users_table
 ```
 3. models
@@ -31,7 +31,7 @@ When naming models , the following format must be used ;
 For single words , start with a capital letter and ensure it is the Singular version of tablename e.g : (User) for a table named users 
 
 For example , say I want to make a model for the users table , i would name it like this :
-```
+```php
 $ php artisan make:model User
 ```
 4. controllers
@@ -41,7 +41,7 @@ When naming controllers , the following format must be used ;
 Use Pascal case or StudlyCaps ( means that the first letter of every word is capitalized ) and then append controller to it e.g: (LoginController)
 
 For example , say I want to make a login controller  , i would name it like this :
-```
+```php
 $ php artisan make:controller LoginController
 ```
 5. seeders
@@ -53,7 +53,7 @@ When naming your seeders , the following format must be used ;
 
 Use Pascal case or StudlyCaps ( means that the first letter of every word is capitalized ) . The seeder must start with the table name . For example, if we want to create a seeder to populate the users table , we would have  : UsersTableSeeder .
 
-```
+```php
 $ php artisan make:seeder UsersTableSeeder
 ```
 
@@ -68,7 +68,7 @@ When naming your variables , the following format must be used ;
 
 Use lower case for single words whilst multiple words should be seperated by underscore (snake_cased) example: $wallet_status and $wallet
 
-```
+```php
 $  $wallet_status ="FLEX MODE"; $wallet="LOADED";
 
 ```
@@ -82,7 +82,7 @@ Class constants MUST be declared in all upper case with underscore separators ex
 
 
 
-```
+```php
 $  const WHAT_DO_YOU_WANNA_DO ="FLEX"; 
 
 ```
@@ -97,7 +97,7 @@ Use Camel case for multiple words and lower case for single words e.g : function
 
 
 
-```
+```php
 $  public function updateWalletOnce();
 $  public function spendTheMoney();
 
